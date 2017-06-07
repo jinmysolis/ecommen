@@ -9,12 +9,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.css">
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    
+    <link href="{{ url('/css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -39,7 +41,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                       Productos
                     </a>
                 </div>
 
@@ -93,7 +95,7 @@
       $.material.init();
     </script>
     
-    <script src="/js/app.js"></script>
+    <script src="{{ url('/js/app.js') }}"></script>
     
 </body>
 </html>
