@@ -6,7 +6,7 @@
 </div>
 
 <div class="container white">
-    {!!Form::open(['url'=>'/produts','method'=>'POST'])!!}
+    {!!Form::open(['url'=>'/products','method'=>'POST'])!!}
        <div class="form-group">
          {!!Form::label('title', 'titulo')!!}
          {!!Form::text('title', null,['class'=>'form-control',' placeholder'=>'Por favor introduzca titulo'])!!}
