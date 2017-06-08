@@ -54,6 +54,19 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
+                        
+                        
+                        
+                        
+                           <li>
+                               <a href="">
+                            Mi carritico pequeño
+                            <span class="circle-shopping-cart">
+                                {{$shopping_cart->productsSize()}}
+                            </span>
+                               </a>
+                        </li>
+                        
                         @if (Auth::guest())
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>

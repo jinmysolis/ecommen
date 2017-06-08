@@ -6,10 +6,12 @@
 
 @section('content')
 
-<h1>bienbenidos</h1>
+<h1>bienvenidos</h1>
+
+                           
 
 @endsection
-
+                       
 <table border="1">
     <thead>
         <tr>
